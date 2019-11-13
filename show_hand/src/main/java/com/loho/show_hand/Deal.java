@@ -4,11 +4,16 @@ public class Deal {
     //模拟一次发全部的牌
     public static void deal(Cards cards){
         int[] poker = Shuffle.shuffleCards(cards);
+        display(poker);
+    }
+
+    //将牌打印出来
+    public static void display(int[] poker){
         for (int i : poker) {
             if(i>52){
-                System.out.println('G');
+                System.out.print('G'+"  ");
             }else{
-                System.out.println(""+getNum(i)+getColor(i));
+                System.out.print(""+getNum(i)+getColor(i)+"  ");
             }
         }
     }

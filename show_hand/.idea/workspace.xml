@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83a56722-8693-4d23-aaf7-1f0838a4d808" name="Default Changelist" comment="" />
+    <list default="true" id="83a56722-8693-4d23-aaf7-1f0838a4d808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/InversePoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Deal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Deal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Money.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Cards.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Cards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Deal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Deal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/GetType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/GetType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Money.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Shuffle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Shuffle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Test.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +47,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -37,7 +58,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1TSiM7TFx90MSWbunchZqL0s3vc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -86,11 +109,37 @@
       <updated>1573459846497</updated>
       <workItem from="1573459850049" duration="8155000" />
       <workItem from="1573523501382" duration="22907000" />
-      <workItem from="1573554061525" duration="7418000" />
+      <workItem from="1573554061525" duration="8177000" />
+      <workItem from="1573607971636" duration="32667000" />
+      <workItem from="1573646449383" duration="588000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java</url>
+          <line>350</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
