@@ -28,4 +28,5 @@ public class Person {
     public int getMoney() {
         return money;
     }
+
 }

@@ -1,6 +1,7 @@
 package com.loho.show_hand;
 
-public class InversePoker {
+public class utils {
+    //给一个字符串，其中包括5张牌，牌与牌之间通过两个空格分隔，得到该牌的原始数字牌
     public static void inverse(String s){
         String[] strings = s.split("  ");
         int[] nums = new int[]{0,0,0,0,0};

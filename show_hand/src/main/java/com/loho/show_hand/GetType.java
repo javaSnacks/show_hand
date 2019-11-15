@@ -1,6 +1,6 @@
 package com.loho.show_hand;
 /**
- * 得到该牌型的类型（定级）以及两副牌比较的时候比较两副牌的level
+ * 第一种方法：得到该牌型的类型（定级）以及两副牌比较的时候比较两副牌的level
  */
 
 import java.util.Arrays;
@@ -14,6 +14,8 @@ class GetType {
 
     //得到该扑克的一些信息
     private int[] getPokerInfo(int[] poker) {
+        hasGhost = false;
+        index = 0;
         int[] nums = new int[5];
         for (int i = 0; i < 5; i++) {
             if (poker[i] > 52) {
@@ -24,7 +26,8 @@ class GetType {
             }
             colors[i] = Deal.getColor(poker[i]);
         }
-        Arrays.sort(nums);
+//        Arrays.sort(nums);
+        (new GetTypeBaseGhostNums()).insertSort(nums, poker);
         for (int i = 0; i < 5; i++) {
             if (nums[i] == -1) {
                 index++;
@@ -33,15 +36,22 @@ class GetType {
             }
         }
         this.nums = nums;
+        this.hasGhost = hasGhost;
         return nums;
     }
 
     //得到该扑克的类型，if中的判断由定级函数完成
-    private int getPokerType(int[] poker) {
+    int getPokerType(int[] poker) {
         this.poker = poker;
         this.nums = new int[5];
         this.colors = new char[5];
         nums = getPokerInfo(poker);
+        //test
+        System.out.print("1@ ");
+        for (int i = 0; i < 5; i++) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println();
         int type = -1;
         if (isFiveGhost()) {
             type = 11;
@@ -66,6 +76,8 @@ class GetType {
         } else if (isSingle()) {
             type = 1;
         }
+        hasGhost = false;
+        index = 0;
         return type;
     }
 
@@ -177,6 +189,12 @@ class GetType {
                     break;
                 }
             }
+        } else if (index == 2) {
+            if(nums[2]==1){
+                level = 14;
+            }else{
+                level = nums[4];
+            }
         } else if (index == 1) {
             for (int i = 1; i < 5; i++) {
                 if (nums[i] == nums[i - 1]) {
@@ -189,6 +207,9 @@ class GetType {
             }
         } else {
             level = nums[4];
+        }
+        if (level == 1) {
+            level = 14;
         }
         return level;
     }
@@ -234,6 +255,7 @@ class GetType {
             }
         } else {
             ans[0] = nums[4];
+
         }
         //比较花色的时候没有用鬼模拟的花色，用的是原有的最大的花色
         int max = -1;
@@ -261,17 +283,63 @@ class GetType {
         return ans;
     }
 
+    //牌型数字映射
+    String numToName(int num) {
+        String name = "";
+        switch (num) {
+            case 1:
+                name = "散牌";
+                break;
+            case 2:
+                name = "单对";
+                break;
+            case 3:
+                name = "二对";
+                break;
+            case 4:
+                name = "三条";
+                break;
+            case 5:
+                name = "顺子";
+                break;
+            case 6:
+                name = "同花";
+                break;
+            case 7:
+                name = "葫芦";
+                break;
+            case 8:
+                name = "四条";
+                break;
+            case 9:
+                name = "同花顺";
+                break;
+            case 10:
+                name = "五条";
+                break;
+            case 11:
+                name = "五鬼";
+                break;
+        }
+        return name;
+    }
+
     //比较level
     int compareSize(int[] poker1, int[] poker2) {
-        GetType getType = new GetType();
-        int type1 = getType.getPokerType(poker1);
-        int[] nums1 = getType.nums;
-        boolean hasGhost1 = getType.hasGhost;
-        int index1 = getType.index;
-        int type2 = getType.getPokerType(poker2);
-        int[] nums2 = getType.nums;
-        int index2 = getType.index;
-        boolean hasGhost2 = getType.hasGhost;
+        hasGhost = false;
+        index = 0;
+        GetType getType1 = new GetType();
+        int type1 = getType1.getPokerType(poker1);
+        System.out.println("你的牌型为:" + numToName(type1));
+        int[] nums1 = getType1.nums;
+        boolean hasGhost1 = getType1.hasGhost;
+        int index1 = getType1.index;
+        GetType getType2 = new GetType();
+        int type2 = getType2.getPokerType(poker2);
+        System.out.println("电脑的牌型为:" + numToName(type2));
+        int[] nums2 = getType2.nums;
+        int index2 = getType2.index;
+        boolean hasGhost2 = getType2.hasGhost;
 
         if (type1 > type2) {
             return 1;
@@ -333,10 +401,17 @@ class GetType {
                     return -1;
                 } else {
                     //比较最大的那张牌的花色
-
+                    return poker1[4] > poker2[4] ? 1 : -1;
                 }
             } else if (type1 == 4) {
-                return threeIdenticalLevel(poker1) > threeIdenticalLevel(poker2) ? 1 : -1;
+                if (threeIdenticalLevel(poker1) > threeIdenticalLevel(poker2)){
+                    return 1;
+                }else if (threeIdenticalLevel(poker1) < threeIdenticalLevel(poker2)){
+                    return -1;
+                }else{
+                    //比较三条中最大的花色
+
+                }
             } else if (type1 == 3) {
                 int[] one = twoPairLevel(poker1);
                 int[] two = twoPairLevel(poker2);
@@ -432,30 +507,21 @@ class GetType {
 
     //顺子定级
     private boolean isFiveConsecutive() {
-        if (!hasGhost) {
-            for (int i = 1; i < 5; i++) {
-                if (nums[i] != nums[i - 1] + 1) {
-                    return false;
-                }
+        //index为最后一个鬼的索引的后一个位置
+        for (int i = index; i < 5; i++) {
+            if (i != 0 && nums[i] == nums[i - 1]) {
+                return false;
             }
-            return true;
+        }
+        if (nums[index] == 1) {
+            if (nums[4] <= 5 || nums[index + 1] >= 10) {
+                return true;
+            } else {
+                return false;
+            }
         } else {
-            //index为最后一个鬼的索引的后一个位置
-            for (int i = index; i < 5; i++) {
-                if (nums[i] == nums[i - 1]) {
-                    return false;
-                }
-            }
-            if (index == 1) {
-                return nums[4] - nums[1] < 5;
-            } else if (index == 2) {
-                return nums[4] - nums[2] < 5;
-            } else if (index == 3) {
-                if (nums[3] != 1) {
-                    return nums[4] - nums[3] < 5;
-                } else {
-                    return nums[4] < 6 || nums[4] > 9;
-                }
+            if (nums[index] >= 10 || nums[4] - nums[index] <= 4) {
+                return true;
             }
             return false;
         }
@@ -478,7 +544,7 @@ class GetType {
                 if (tmpColor == 'N' && colors[i] != 'G') {
                     tmpColor = colors[i];
                 }
-                if (tmpColor != 'N' && colors[i] != tmpColor) {
+                if (tmpColor != 'N' && colors[i] != tmpColor && colors[i] != 'G') {
                     return false;
                 }
             }
@@ -491,11 +557,11 @@ class GetType {
         if (!hasGhost) {
             return nums[0] == nums[1] && nums[3] == nums[4] && (nums[2] == nums[1] || nums[2] == nums[3]);
         } else {
-            for (int i = 1; i < 5; i++) {
-                if (nums[i] == nums[i - 1]) {
-                    return false;
-                }
-            }
+//            for (int i = 1; i < 5; i++) {
+//                if (nums[i] == nums[i - 1]) {
+//                    return false;
+//                }
+//            }
             if (index == 2) {
                 return nums[3] == nums[2] || nums[3] == nums[4];
             } else {
@@ -548,51 +614,6 @@ class GetType {
             }
         }
         return isSameColor();
-//        //N代表没有颜色
-//        char color = 'N';
-//        int max = -1;
-//        int min = 100;
-//        int sum = 0;
-//        for (int i :
-//                poker) {
-//            if (i < 53 && color == 'N') {
-//                color = Deal.getColor(i);
-//            }
-//            if (i < 53 && color != Deal.getColor(i)) {
-//                return false;
-//            } else if (i < 53) {
-//                int tmp = ((i + 12) % 13 + 1);
-//                if (max < tmp) {
-//                    max = tmp;
-//                }
-//                if (min > tmp) {
-//                    min = tmp;
-//                }
-//                sum += tmp;
-//            }
-//        }
-//        if (hasGhost && (max - min) < 4) {
-//            return true;
-//        } else if (!hasGhost && (max - min) == 4) {
-//            return true;
-//        } else if (!hasGhost && min == 1 && max == 13 && sum == 47) {
-//            return true;
-//        } else if (hasGhost && min == 1) {
-//            if (max < 6) {
-//                return true;
-//            } else {
-//                int secMin = max;
-//                for (int i :
-//                        poker) {
-//                    int tmp1 = ((i + 12) % 13 + 1);
-//                    if (tmp1 != 1 && secMin > tmp1 && i < 53) {
-//                        secMin = tmp1;
-//                    }
-//                }
-//                return secMin > 9;
-//            }
-//        }
-//        return false;
     }
 
     //五条定级
