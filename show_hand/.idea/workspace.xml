@@ -2,27 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83a56722-8693-4d23-aaf7-1f0838a4d808" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/better_show_hand/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/better_show_hand/Cards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/better_show_hand/Poker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetTypeBaseGhostNums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestGetType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestGetTypeBaseGhostNums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestTwoCompareMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestTwoGetTypeMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/CompareTwoNums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/FiveCards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/enumeration/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/enumeration/Num.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/enumeration/PokerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/loho/show_hand/TestCards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/loho/show_hand/TestCompareTwoNums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/loho/show_hand/TestFiveCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/better_show_hand/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/better_show_hand/Cards.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/better_show_hand/Poker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Cards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/InversePoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Deal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetTypeBaseGhostNums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetTypeBaseGhostNums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/Shuffle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestGetType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestGetTypeBaseGhostNums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/loho/show_hand/TestGetTypeBaseGhostNums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestTwoCompareMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/TestTwoGetTypeMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loho/show_hand/utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/better_show_hand/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/better_show_hand/Cards.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/better_show_hand/Poker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Card.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Cards.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Cards.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/GetType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/GetType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/InversePoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/InversePoker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Deal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/GetType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/GetTypeBaseGhostNums.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/GetTypeBaseGhostNums.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/InversePoker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/Shuffle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/TestGetType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/TestGetTypeBaseGhostNums.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/TestLoop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/TestTwoCompareMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/loho/show_hand/TestTwoGetTypeMethod.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +72,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -67,11 +93,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/loho/show_hand" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.loho.show_hand" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sulinwei\IdeaProjects\show_hand\src\main\java\com\loho\show_hand" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.loho.show_hand.Main" />
       <module name="show_hand" />
@@ -99,8 +135,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.loho.show_hand.TestGetType" />
+    <configuration name="TestCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.loho.show_hand.TestCards" />
+      <module name="show_hand" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loho.show_hand.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCompareTwoNums" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.loho.show_hand.TestCompareTwoNums" />
+      <module name="show_hand" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.loho.show_hand.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFiveCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.loho.show_hand.TestFiveCards" />
       <module name="show_hand" />
       <extension name="coverage">
         <pattern>
@@ -125,39 +187,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.loho.show_hand.TestLoop" />
-      <module name="show_hand" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.loho.show_hand.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTwoCompareMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.loho.show_hand.TestTwoCompareMethod" />
-      <module name="show_hand" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.loho.show_hand.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestTwoCompareMethod" />
-        <item itemvalue="Application.TestLoop" />
-        <item itemvalue="Application.TestGetType" />
+        <item itemvalue="Application.TestCompareTwoNums" />
+        <item itemvalue="Application.TestFiveCards" />
         <item itemvalue="Application.TestGetTypeBaseGhostNums" />
+        <item itemvalue="Application.TestCards" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +215,13 @@
       <workItem from="1573696690397" duration="29387000" />
       <workItem from="1573780475686" duration="17824000" />
       <workItem from="1573803488002" duration="6077000" />
+      <workItem from="1573809727825" duration="43000" />
+      <workItem from="1573812221040" duration="2282000" />
+      <workItem from="1574043061322" duration="4218000" />
+      <workItem from="1574047477065" duration="28262000" />
+      <workItem from="1574126292053" duration="6418000" />
+      <workItem from="1574132740172" duration="19046000" />
+      <workItem from="1574157249157" duration="5000" />
     </task>
     <servers />
   </component>
@@ -200,26 +243,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java</url>
-          <line>427</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java</url>
-          <line>246</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/loho/show_hand/GetType.java</url>
-          <line>179</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
